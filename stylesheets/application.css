@@ -100,6 +100,8 @@ header .navbar {
     overflow: hidden; }
     .carousel div img {
       margin-left: -220px; }
+  .categoria-header .header-producto img {
+      margin-left: -100px; }
 }
 
 a {
