@@ -95,6 +95,11 @@ header .navbar {
 @media (max-width: 768px) {
   .navbar-nav>li>a {
     padding-top: 24px; }
+  .carousel div {
+    width: 768px;
+    overflow: hidden; }
+    .carousel div img {
+      margin-left: -220px; }
 }
 
 a {
@@ -106,9 +111,11 @@ a {
 .categoria-header .titulo-producto {
   margin-top: 0px; }
 .categoria-header .header-producto {
-  margin-top: -32px; }
+  width: 105%;
+  margin-top: -32px;
+  overflow: hidden !important; }
   .categoria-header .header-producto img {
-    width: 100%;
+    width: 940px !important;
     height: 400px; }
 
 .producto {
@@ -124,15 +131,14 @@ a {
     width: 103%;
     height: 103%;
     z-index: -1;
-    background-image: url("/images/BeFunky Collage.jpg");
+    background-image: url("/images/fondo.jpg");
     background-repeat: repeat;
-    opacity: 0.2;
+    opacity: 0.4;
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover;
-  }
+    background-size: cover; }
   .producto .background {
     height: 100%;
     z-index: -1; }
@@ -141,14 +147,19 @@ a {
     padding-left: 15px;
     padding-right: 15px; }
 
+  .producto .well {
+    border: 1px solid #c9c9c9; }
+
 .carousel {
   width: auto;
   margin-top: -20px; }
   .carousel .slick-dots {
     bottom: 60px; }
   .carousel .slick-slide img {
-    width: 100%;
-    height: 600px; }
+    width: 100%; }
+  .carousel div img {
+    height: 600px;
+    width: 1440px !important; }
 
 a:hover, a:focus {
   color: #eb3812; }
