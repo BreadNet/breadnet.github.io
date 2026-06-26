@@ -546,8 +546,8 @@ h3 {
   }
 
   .navbar-nav > li > a {
-    padding: 22px 10px 14px;
-    font-size: 13px;
+    padding: 22px 8px 14px;
+    font-size: 12px;
   }
 
   a.brand h3 {
@@ -561,21 +561,80 @@ h3 {
   .categoria-contenido p {
     font-size: 15px;
   }
-}
 
-@media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
+  .variedades-grid {
+    flex-direction: column;
+    gap: 16px;
   }
 
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 22px;
+  .separador-img {
+    height: 200px;
   }
 }
 
 @media (max-width: 520px) {
-  a.brand h3 {
-    font-size: 16px;
+  header .navbar .navbar-nav {
+    margin-top: 0;
+  }
+
+  .navbar-nav > li > a {
+    padding: 16px 6px 12px;
+    font-size: 11px;
+  }
+
+  .navbar-header.header {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-img {
+    height: 60px;
+    top: 0;
+  }
+
+  .carousel div img {
+    height: 220px;
+  }
+
+  .portfolio-box img {
+    height: 160px;
+  }
+
+  .categoria-header .header-producto img {
+    height: 160px;
+  }
+
+  .categoria-contenido h3 {
+    font-size: 18px;
+  }
+
+  .variedad-titulo {
+    font-size: 15px;
+  }
+
+  .variedad-lista li {
+    font-size: 13px;
+    padding: 6px 0 6px 24px;
+  }
+
+  .whatsapp-float {
+    width: 56px;
+    height: 56px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .whatsapp-icon {
+    font-size: 30px;
+  }
+
+  .producto .content {
+    padding: 12px;
+  }
+
+  footer p {
+    font-size: 12px;
+    line-height: 1.5;
   }
 }
 
@@ -584,24 +643,24 @@ h3 {
   bottom: 24px;
   right: 24px;
   z-index: 999;
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: #25d366;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.5);
 }
 
 .whatsapp-icon {
   color: #fff;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1;
 }
