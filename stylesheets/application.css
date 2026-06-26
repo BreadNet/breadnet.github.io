@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
   --primary: #d4764e;
@@ -15,8 +15,8 @@
   --shadow-hover: 0 8px 30px rgba(60, 40, 20, 0.15);
   --radius: 12px;
   --radius-sm: 8px;
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --font-heading: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
 html {
@@ -113,7 +113,7 @@ header .navbar .navbar-nav {
   font-weight: 600;
   color: var(--text) !important;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   transition: color 0.2s;
 }
 
@@ -282,7 +282,7 @@ a.brand h3 {
   opacity: 0.15;
 }
 
-body.panes {
+body {
   background-image: url("/images/fondo_panes.jpg");
   background-size: cover;
   background-position: center;
@@ -347,7 +347,7 @@ body.panes {
 
 .categoria-header .titulo-producto h2 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text);
   letter-spacing: 1px;
 }
@@ -460,11 +460,12 @@ body.panes {
 
 footer {
   width: 100%;
-  padding: 24px 16px;
-  border-top: 1px solid var(--border);
-  background: #fff;
+  padding: 32px 16px 24px;
+  border-top: none;
+  background: linear-gradient(to bottom, transparent, #fff 40%);
   color: var(--text-light);
   font-size: 14px;
+  position: relative;
 }
 
 footer p {
@@ -563,15 +564,6 @@ hr {
   letter-spacing: 12px;
   margin: 20px 0;
   user-select: none;
-}
-
-.titulo-producto h2::before,
-.titulo-producto h2::after {
-  content: ' ~ ';
-  font-size: 24px;
-  color: var(--primary-light);
-  font-weight: 300;
-  display: inline-block;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
