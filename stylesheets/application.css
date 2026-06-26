@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
   --primary: #d4764e;
   --primary-dark: #b85e38;
   --primary-light: #f0a17a;
   --accent: #8c6a4f;
+  --accent-light: #9CAF88;
   --bg: #faf7f4;
   --bg-alt: #f3eee8;
   --text: #3a2a1e;
@@ -12,7 +15,8 @@
   --shadow-hover: 0 8px 30px rgba(60, 40, 20, 0.15);
   --radius: 12px;
   --radius-sm: 8px;
-  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
 
 html {
@@ -25,13 +29,30 @@ html {
 }
 
 body {
-  font-family: var(--font) !important;
+  font-family: var(--font-body) !important;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+.titulo-producto h2,
+.categoria-header .titulo-producto h2,
+.variedad-titulo,
+.project-category,
+a.brand h3,
+.navbar-nav > li > a {
+  font-family: var(--font-heading) !important;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--font-heading) !important;
+  font-weight: 600;
+  color: var(--text);
 }
 
 a {
@@ -89,10 +110,10 @@ header .navbar .navbar-nav {
   padding: 22px 14px 14px;
   line-height: 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text) !important;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition: color 0.2s;
 }
 
@@ -234,14 +255,6 @@ a.brand h3 {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0;
-  font-family: var(--font);
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -267,6 +280,33 @@ a.brand h3 {
   background-image: url("/images/fondo.jpg");
   background-repeat: repeat;
   opacity: 0.15;
+}
+
+body.panes {
+  background-image: url("/images/fondo_panes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.panes > .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.panes .producto.row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.panes .producto {
+  margin-top: 0;
+}
+
+.panes .producto:before {
+  display: none;
 }
 
 .producto .background {
@@ -306,7 +346,7 @@ a.brand h3 {
 }
 
 .categoria-header .titulo-producto h2 {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--text);
   letter-spacing: 1px;
@@ -446,7 +486,7 @@ footer a:hover {
   border-radius: var(--radius-sm);
   padding: 12px 16px;
   font-size: 15px;
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--text);
   background: #fff;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -512,6 +552,33 @@ hr {
   background: linear-gradient(to right, transparent, var(--border), transparent);
   margin: 24px auto;
   max-width: 200px;
+}
+
+/* ─── Decorative Elements ─── */
+
+.section-divider {
+  text-align: center;
+  font-size: 20px;
+  color: var(--primary-light);
+  letter-spacing: 12px;
+  margin: 20px 0;
+  user-select: none;
+}
+
+.titulo-producto h2::before,
+.titulo-producto h2::after {
+  content: ' ~ ';
+  font-size: 24px;
+  color: var(--primary-light);
+  font-weight: 300;
+  display: inline-block;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 h3 {
