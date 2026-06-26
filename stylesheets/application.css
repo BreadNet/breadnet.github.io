@@ -74,10 +74,10 @@ a.brand {
 }
 
 .logo-img {
-  height: 120px;
+  height: 48px;
   width: auto;
   position: relative;
-  top: -20px;
+  top: 2px;
   z-index: 10;
 }
 
