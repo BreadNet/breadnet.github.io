@@ -76,6 +76,8 @@ a.brand {
 .logo-img {
   height: 50px;
   width: auto;
+  position: relative;
+  top: 14px;
   z-index: 10;
 }
 
