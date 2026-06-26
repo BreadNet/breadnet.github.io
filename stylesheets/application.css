@@ -327,7 +327,7 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   background: #fff;
-  padding: 32px;
+  padding: 24px;
 }
 
 .categoria-header .header-producto {
@@ -494,6 +494,12 @@ footer a:hover {
   color: var(--text);
   background: #fff;
   transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bigicon {
+  font-size: 22px;
+  color: var(--primary);
+  vertical-align: middle;
 }
 
 .form-control:focus {
