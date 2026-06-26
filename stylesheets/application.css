@@ -274,17 +274,6 @@ a.brand h3 {
   position: relative;
 }
 
-.producto:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: url("/images/fondo.jpg");
-  background-repeat: repeat;
-  opacity: 0.15;
-}
-
 body {
   background-image: url("/images/fondo_panes.jpg");
   background-size: cover;
@@ -306,10 +295,6 @@ body {
 
 .panes .producto {
   margin-top: 0;
-}
-
-.panes .producto:before {
-  display: none;
 }
 
 .producto .background {
@@ -463,9 +448,9 @@ body {
 
 footer {
   width: 100%;
-  padding: 32px 16px 24px;
+  padding: 48px 16px 24px;
   border-top: none;
-  background: linear-gradient(to bottom, transparent, #fff 40%);
+  background: linear-gradient(to bottom, transparent 0%, #fff 50%);
   color: var(--text-light);
   font-size: 14px;
   position: relative;
