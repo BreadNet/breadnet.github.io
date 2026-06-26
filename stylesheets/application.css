@@ -74,10 +74,8 @@ a.brand {
 }
 
 .logo-img {
-  height: 120px;
+  height: 50px;
   width: auto;
-  position: relative;
-  top: -26px;
   z-index: 10;
 }
 
@@ -572,8 +570,7 @@ h3 {
   }
 
   .logo-img {
-    height: 48px;
-    top: 0;
+    height: 38px;
   }
 }
 
@@ -598,9 +595,7 @@ h3 {
   }
 
   .logo-img {
-    height: 40px;
-    top: 0;
-    position: relative;
+    height: 32px;
   }
 
   .carousel div img {
