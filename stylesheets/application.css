@@ -672,6 +672,7 @@ h3 {
 
   .navbar-header.header > .brand {
     order: -1;
+    margin-top: 2px;
   }
 
   .logo-img {
