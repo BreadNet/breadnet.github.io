@@ -87,7 +87,6 @@ header .navbar {
 }
 
 header .navbar .logo-container {
-  margin-top: -10px;
   overflow: visible;
 }
 
@@ -96,11 +95,9 @@ a.brand {
 }
 
 .logo-img {
-  height: 50px;
+  height: 40px;
   width: auto;
-  position: relative;
-  top: 14px;
-  z-index: 10;
+  display: block;
 }
 
 header .navbar .navbar-nav {
@@ -143,6 +140,11 @@ header .navbar .navbar-nav {
 
 .navbar-right {
   float: right !important;
+}
+
+.navbar-header.header {
+  display: flex;
+  align-items: center;
 }
 
 a.brand h3 {
@@ -627,7 +629,8 @@ h3 {
   }
 
   .logo-img {
-    height: 38px;
+    height: 30px;
+    top: 0;
   }
 }
 
@@ -652,7 +655,8 @@ h3 {
   }
 
   .logo-img {
-    height: 32px;
+    height: 24px;
+    top: 0;
   }
 
   .carousel div img {
