@@ -652,6 +652,11 @@ h3 {
   .navbar-header.header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-header.header > .brand {
+    order: -1;
   }
 
   .logo-img {
