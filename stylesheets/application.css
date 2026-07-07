@@ -95,7 +95,7 @@ a.brand {
 }
 
 .logo-img {
-  height: 40px;
+  height: 36px;
   width: auto;
   display: block;
 }
@@ -629,7 +629,7 @@ h3 {
   }
 
   .logo-img {
-    height: 30px;
+    height: 26px;
     top: 0;
   }
 }
@@ -637,7 +637,7 @@ h3 {
 @media (max-width: 520px) {
   header .navbar {
     height: auto;
-    min-height: 50px !important;
+    min-height: 44px !important;
   }
 
   header .navbar .navbar-nav {
@@ -645,8 +645,9 @@ h3 {
   }
 
   .navbar-nav > li > a {
-    padding: 16px 6px 12px;
-    font-size: 10px;
+    padding: 12px 4px 8px;
+    font-size: 9px;
+    letter-spacing: 0;
   }
 
   .navbar-header.header {
@@ -660,7 +661,7 @@ h3 {
   }
 
   .logo-img {
-    height: 24px;
+    height: 20px;
     top: 0;
   }
 
