@@ -637,7 +637,9 @@ h3 {
 @media (max-width: 520px) {
   header .navbar {
     height: auto;
-    min-height: 44px !important;
+    min-height: 48px !important;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   header .navbar .container-fluid {
@@ -653,7 +655,7 @@ h3 {
   }
 
   .navbar-nav > li > a {
-    padding: 8px 4px 6px;
+    padding: 6px 4px 6px;
     font-size: 9px;
     letter-spacing: 0;
     white-space: nowrap;
@@ -672,7 +674,8 @@ h3 {
 
   .navbar-header.header > .brand {
     order: -1;
-    margin-top: 2px;
+    display: flex;
+    align-items: center;
   }
 
   .logo-img {
