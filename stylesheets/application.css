@@ -637,30 +637,20 @@ h3 {
 @media (max-width: 520px) {
   header .navbar {
     height: auto;
-    min-height: 40px !important;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  header .navbar .container-fluid {
-    padding-left: 2px;
-    padding-right: 2px;
+    min-height: 50px !important;
   }
 
   header .navbar .navbar-nav {
     margin-top: 0;
-    margin-bottom: 0;
     display: flex;
     align-items: center;
-    gap: 1px;
   }
 
   .navbar-nav > li > a {
-    padding: 4px 3px 4px;
+    padding: 8px 3px 6px;
     font-size: 8px;
     letter-spacing: 0;
-    white-space: nowrap;
-    line-height: 1.2;
+    line-height: 1;
   }
 
   .navbar-nav > li,
@@ -679,12 +669,12 @@ h3 {
     display: flex;
     align-items: center;
     position: relative;
-    left: -6px;
+    left: -4px;
   }
 
   .logo-img {
-    height: 16px;
-    top: 3px;
+    height: 24px;
+    top: 2px;
     position: relative;
   }
 
